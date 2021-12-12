@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+body, a, p, div, span, h1, h2, h3, h4, ul, li, table, th, tr, td, button, select {
+	cursor: default;
+	font-family: monospace, Verdana, Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 16px;
+	text-align: justify;
+	text-decoration: none;
+	word-wrap: break-word;
+	color: #000;
+	background-color: transparent;
+	background-attachment: fixed;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	min-width: 100%;
+	max-width: 100%;
+	min-height: 600px;
+	overflow-x: hidden;
+	background-color: #EEE;
+	color: #333;
+}
+
+a {
+	cursor: pointer;
+	color: blue;
+}
+
+a:hover {
+	color: red;
+}
+
+#idPAGE {
+	margin: 0;
+	padding: 0;
+}
+
+#idHeaderTop {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	min-height: 32px;
+	background-color: #000;
+	color: #FFF;
+	border-collapse: collapse;
+    border-spacing: 0px;
+}
+
+#idHeaderTop td span {
+	margin: 4px;
+	padding: 0;
+	background-color: #000;
+	color: #FFF;
+}
+
+.divFooter {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 24px;
+	color: #FFF;
+	background-color: #000;
+	padding: 10px;
+	text-align: center;
+}
+
+.divFooter a {
+	color: #FFF;
+}
+
+.divFooter a:hover {
+	color: #F00;
+}
+
+.tbAuth {
+	max-width: 400px;
+	min-width: 400px;
+	width: 400px;
+	border-collapse: collapse;
+    border-spacing: 0px;
+}
+
+#idInput {
+	margin: 8px;
+	padding: 8px;
+	font-size: 20px;
+}
+
+#idInput * {
+	font-size: 20px;
+}
+
+#idInput h2 {
+	font-size: 32px;
+}
+
+#idInput table {
+	border-collapse: collapse;
+    border-spacing: 0px;
+	width: 600px;
+}
+
+#idInput td {
+	padding: 8px;
+}

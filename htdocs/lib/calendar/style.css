@@ -1,0 +1,222 @@
+
+#idCalendarBox {
+	margin: 0;
+    padding: 0;
+}
+
+#idCalendarBox table {
+	border-collapse: collapse;
+    border-spacing: 0px;
+}
+
+#idCalendar {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: rgba(0,0,0,0.2);
+	color: #FFF;
+    height: 385px;
+    width: 385px;
+}
+
+#idCalendar .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100%;
+	min-width: 100%;
+}
+
+#idCalendar button::-moz-focus-inner { 
+  border: 0;
+  padding: 0;
+}
+
+#idCalendar #calendari {
+    margin: 20px 0;
+    position: relative;
+    overflow: hidden;
+    height: 326px;
+    width: 350px;
+    font-size: 14px;
+    box-shadow: 0px 1px 4px rgba(0,0,0,0.4);
+}
+
+#idCalendar table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 350px;
+    box-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*transform: translateX(0);*/
+    /*transition: all 0.3s ease;*/
+}
+
+#idCalendar table.actiu {
+    /*transform: translateX(0px)top;*/
+}
+
+#idCalendar table.inactiu {
+    /*transition: all 0.3s 0.01s ease;*/
+}
+
+#idCalendar table.amagat-esquerra {
+    /*transform: translateX(-299px);*/
+}
+
+#idCalendar table.amagat-dreta {
+    /*transform: translateX(300px);*/
+}
+
+#idCalendar td, #idCalendar td span, #idCalendar th {
+    text-align: center;
+    background-color: #fff;
+}
+
+#idCalendar th {
+    padding: 10px;
+}
+
+#idCalendar tr:first-child th {
+    font-size: 20px;
+    font-weight: bold;
+    border-left: none;
+    border-top: none;
+}
+
+#idCalendar td:last-child, #idCalendar th:last-child {
+  border-right: none;
+}
+
+#idCalendar th {
+    border-top: 1px solid rgba(0,0,0,0.1);
+    border-right: 1px solid rgba(0,0,0,0.1);
+    background-color: #9b59b6;
+    color: #fff;
+    text-shadow: 0px -1px 0px rgba(0,0,0,0.2);
+    font-weight: normal;
+}
+
+#idCalendar th .any {
+    font-size: 14px;
+    font-weight: normal;
+    display: block;
+    text-shadow: none;
+    color: #fff;
+	text-align: center;
+}
+
+#idCalendar tr:nth-child(2) th {
+    padding: 5px;
+}
+
+#idCalendar td {
+    padding: 0;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+#idCalendar td>span {
+    color: #555;
+    padding: 10px;
+    display: block;
+    border: 2px solid transparent;
+    transition: border 0.3s ease;
+}
+
+#idCalendar td:nth-child(even)>span {
+    background-color: rgba(0,0,0,0.02);
+}
+
+#idCalendar td:last-child>span, #idCalendar td:nth-child(6)>span {
+    color: #9b59b6;
+}
+
+#idCalendar td.avui>span {
+    font-weight: bold;
+    background-color: #9b59b6;
+    color: #fff;
+    border: 2px solid rgba(0,0,0,0.1);
+}
+
+#idCalendar td.fora>span {
+    opacity: 0.2;
+}
+
+#idCalendar td>span:hover {
+    background: #a57cb6;
+    color: #fff;
+}
+
+#idCalendar .boto-next, #idCalendar .boto-prev {
+    background: rgba(0,0,0,0.1);
+    color: #fff;
+    font-family: inherit;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: inherit;
+    padding: 2px 10px 5px 10px;
+    line-height: 1px;
+    height: 30px;
+    width: 30px;
+    vertical-align: middle;
+    border-radius: 100%;
+    position: absolute;
+    top: 15px;
+}
+
+#idCalendar .boto-next {
+	right: 10px;
+	padding-left: 13px;
+}
+
+#idCalendar .boto-prev {
+	left: 10px;
+	padding-right: 13px;
+}
+
+#idCalendar .boto-next:hover, #idCalendar .boto-prev:hover {
+    background: rgba(0,0,0,0.2);
+}
+
+#idCalendar button:hover {
+	cursor: pointer;
+}
+#idCalendar button:focus {
+	outline: none;
+}
+
+#idCalendar footer {
+  text-align: center;
+  color: #ddd;
+  font-weight: normal;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.2);
+  font-size: 0.8em;
+  padding: 20px;
+}
+
+#idCalendar footer a,
+#idCalendar footer a:link {
+  color: #fff;
+  text-decoration: none;
+}
+
+#idGraph {
+	display: inline-block;
+    margin: 0;
+    padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#idCanvasGraph {
+	width: 100%;
+	height: 387px;
+    min-height: 387px;
+    max-height: 387px;
+}
